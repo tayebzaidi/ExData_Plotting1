@@ -11,7 +11,7 @@ colnames(pwr) <- unlist(header)
 times <- pwr$Time
 dates <- pwr$Date
 
-DateTime <- paste(dates, time)
+DateTime <- paste(dates, times)
 
 DateTime <- strptime(DateTime, format = "%d/%m/%Y %H:%M:%S")
 
